@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fliperama do Zé</title>
+    <link href="assets/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Fliperama do Zé</h1>
+      <p>
+        Este projeto não tem fim comercial e foi desenvolvido apenas como
+        oportunidade de aprendizado
+      </p>
+    </header>
+    <main>
+      <div
+        class="gallery js-flickity"
+        data-flickity-options='{ "wrapAround": true }'
+        id="gallery"
+      ></div>
+      <div id="screen">
+        <div class="fake-screen">
+          <span>Vai lá, escolha um joguinho primeiro :)</span>
+        </div>
+        <iframe
+          class="hidden"
+          src=""
+          width="600"
+          height="450"
+          frameborder="no"
+          allowfullscreen="true"
+          webkitallowfullscreen="true"
+          mozallowfullscreen="true"
+          scrolling="no"
+        ></iframe>
+      </div>
+    </main>
+    <footer>
+      <span
+        >Desenvolvido com
+        <a href="https://flickity.metafizzy.co/" target="_blank">Flickity</a> e
+        <a href="https://www.retrogames.cc">Retrogames</a></span
+      >
+    </footer>
+  </body>
+  <script src="assets/js/main.js"></script>
+</html>
