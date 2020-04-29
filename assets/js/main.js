@@ -96,14 +96,14 @@ const App = {
   },
   loadPlugins: function (plugins) {
     plugins.forEach(function (plugin) {
-      let newscript = document.createElement("script");
-      newscript.type = "text/javascript";
-      newscript.async = true;
-      newscript.src = plugin;
+      let newPlugin = document.createElement("script");
+      newPlugin.type = "text/javascript";
+      newPlugin.async = true;
+      newPlugin.src = plugin;
       (
         document.querySelectorAll("head")[0] ||
         document.querySelectorAll("body")[0]
-      ).appendChild(newscript);
+      ).appendChild(newPlugin);
     });
     return new Promise((resolve) => resolve());
   },
